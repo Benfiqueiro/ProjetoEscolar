@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Atualizar";
+}
+
+<h2>Atualizar Dados</h2>
+
+@using (Html.BeginForm("atuAluno", "Administrativo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Alunos</label>
+    <br />
+    @Html.DropDownList("aluno", "Escolha o Aluno")
+    <br />
+    <label>Nome do Aluno</label>
+    <br />
+    <input type="text" id="txtNmAluno" name="txtNmAluno" />
+    <br />
+    <label>Numero do telefone</label>
+    <br />
+    <input type="text" id="txtTelAluno" name="txtTelAluno" />
+    <br />
+    <br />
+    <input type="submit" value="Atualizar" />
+    <br />
+    @ViewBag.Messagem
+}
+
+@Html.ActionLink("Voltar", "index", "Administrativo")

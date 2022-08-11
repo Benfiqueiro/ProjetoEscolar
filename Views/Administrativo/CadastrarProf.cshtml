@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar Dados</h2>
+
+
+@using (Html.BeginForm("CadastrarProf", "Administrativo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Nome do Professor</label>
+    <br />
+    <input type="text" id="txtNmProf" name="txtNmProf" />
+    <br />
+    <br />
+    <input type="submit" value="Cadastrar" />
+    <br />
+    @ViewBag.Messagem
+}
+
+@Html.ActionLink("Voltar", "index", "Administrativo")

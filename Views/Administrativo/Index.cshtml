@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Administração</h2>
+
+<ul class="list-group">
+    <li class="list-group-item">@Html.ActionLink("Cadastrar Alunos", "CadastrarAluno", "Administrativo")</li>
+    <li class="list-group-item">@Html.ActionLink("Cadastrar Professor", "CadastrarProf", "Administrativo")</li>
+    <li class="list-group-item">@Html.ActionLink("Atualizar Dados Alunos", "AtuAluno", "Administrativo")</li>
+    <li class="list-group-item">@Html.ActionLink("Atualizar Dados Professor", "AtuProf", "Administrativo")</li>
+    <li class="list-group-item">@Html.ActionLink("Consultar Alunos", "ConsultarAluno", "Administrativo")</li>
+    <li class="list-group-item">@Html.ActionLink("Consultar Professores", "ConsultarProf", "Administrativo")</li>
+</ul>
